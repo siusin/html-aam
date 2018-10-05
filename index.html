@@ -3736,7 +3736,7 @@
             <tr tabindex="-1" id="att-contenteditable">
                 <th><code>contenteditable</code></th>
                 <td class="elements"><a href="https://www.w3.org/TR/html/editing.html#element-attrdef-global-contenteditable">HTML elements</a></td>
-                <td class="aria">?</td>
+                <td class="aria">Not mapped</td>
                 <td class="ia2">
                   <div class="states">
                     <span class="type">States: </span>
@@ -4168,7 +4168,7 @@
             <tr tabindex="-1" id="att-high">
                 <th><code>high</code></th>
                 <td class="elements"><a href="https://www.w3.org/TR/html/sec-forms.html#element-attrdef-meter-high"><code>meter</code></a></td>
-                <td class="aria">?</td>
+                <td class="aria"><div class="general">Not mapped</div></td>
                 <td class="ia2"><div class="general">Not mapped</div></td>
                 <td class="uia"><code>RangeValue.Maximum</code></td>
                 <td class="atk"><div class="general">Not mapped</div></td>
@@ -4290,7 +4290,11 @@
             <tr tabindex="-1" id="att-label">
                 <th><code>label</code></th>
                 <td class="elements"><a href="https://www.w3.org/TR/html/interactive-elements.html#element-attrdef-menuitem-label"><code>menuitem</code></a>; <a href="https://www.w3.org/TR/html/interactive-elements.html#element-attrdef-menu-label"><code>menu</code></a>; <a href="https://www.w3.org/TR/html/sec-forms.html#element-attrdef-optgroup-label"><code>optgroup</code></a>; <a href="https://www.w3.org/TR/html/sec-forms.html#element-attrdef-option-label"><code>option</code></a>; <a href="https://www.w3.org/TR/html/semantics-embedded-content.html#element-attrdef-track-label"><code>track</code></a></td>
-                <td class="aria">?</td>
+                <td class="aria">
+                  <a class="core-mapping" href="#ariaLabel"><code>aria-label</code></a>
+                  or
+                  <a class="core-mapping" href="#ariaLabelledBy"><code>aria-labelledby</code></a>
+                </td>
                 <td class="ia2">
                   <div class="name">
                     Associates the <a class="termref">accessible name</a>
@@ -4388,7 +4392,7 @@
             <tr tabindex="-1" id="att-low">
                 <th><code>low</code></th>
                 <td class="elements"><a href="https://www.w3.org/TR/html/sec-forms.html#element-attrdef-meter-low"><code>meter</code></a></td>
-                <td class="aria">?</td>
+                <td class="aria">Not mapped</td>
                 <td class="ia2"><div class="general">Not mapped</div></td>
                 <td class="uia"><code>RangeValue.Minimum</code></td>
                 <td class="atk"><div class="general">Not mapped</div></td>
@@ -4398,7 +4402,9 @@
             <tr tabindex="-1" id="att-max-input">
                 <th><code>max</code></th>
                 <td class="elements"><a href="https://www.w3.org/TR/html/sec-forms.html#element-attrdef-input-max"><code>input</code></a></td>
-                <td class="aria">?</td>
+                <td class="aria">
+                  <a class="core-mapping" href="#ariaValueMax"><code>aria-valuemax</code></a>
+                </td>
                 <td class="ia2">
                   <div class="general">
                     Exposed as <code>IAccessibleValue::maximumValue</code> if the element
@@ -4418,7 +4424,9 @@
             <tr tabindex="-1" id="att-max">
                 <th><code>max</code></th>
                 <td class="elements"><a href="https://www.w3.org/TR/html/sec-forms.html#element-attrdef-meter-max"><code>meter</code></a>; <a href="https://www.w3.org/TR/html/sec-forms.html#element-attrdef-progress-max"><code>progress</code></a></td>
-                <td class="aria">?</td>
+                <td class="aria">
+                  <a class="core-mapping" href="#ariaValueMax"><code>aria-valuemax</code></a>
+                </td>
                 <td class="ia2">
                   <div class="general">
                     Exposed as <code>IAccessibleValue::maximumValue</code> if the element
@@ -4438,7 +4446,7 @@
             <tr tabindex="-1" id="att-maxlength">
                 <th><code>maxlength</code></th>
                 <td class="elements"><a href="https://www.w3.org/TR/html/sec-forms.html#element-attrdef-input-maxlength"><code>input</code></a>; <a href="https://www.w3.org/TR/html/sec-forms.html#element-attrdef-textarea-maxlength"><code>textarea</code></a></td>
-                <td class="aria">?</td>
+                <td class="aria">Not mapped</td>
                 <td class="ia2"><div class="general">Not mapped</div></td>
                 <td class="uia"><div class="general">Not mapped</div></td>
                 <td class="atk"><div class="general">Not mapped</div></td>
@@ -4468,7 +4476,9 @@
             <tr tabindex="-1" id="att-min-input">
                 <th><code>min</code></th>
                 <td class="elements"><a href="https://www.w3.org/TR/html/sec-forms.html#element-attrdef-input-min"><code>input</code></a></td>
-                <td class="aria">?</td>
+                <td class="aria">
+                  <a class="core-mapping" href="#ariaValueMax"><code>aria-valuemin</code></a>
+                </td>
                 <td class="ia2">
                   <div class="general">
                     Exposed as <code>IAccessibleValue::minimumValue</code> if the element
@@ -4488,7 +4498,9 @@
             <tr tabindex="-1" id="att-min">
                 <th><code>min</code></th>
                 <td class="elements"><a href="https://www.w3.org/TR/html/sec-forms.html#element-attrdef-meter-min"><code>meter</code></a></td>
-                <td class="aria">?</td>
+                <td class="aria">
+                  <a class="core-mapping" href="#ariaValueMax"><code>aria-valuemin</code></a>
+                </td>
                 <td class="ia2">
                   <div class="general">
                     Exposed as <code>IAccessibleValue::minimumValue</code> if the element
@@ -4767,7 +4779,7 @@
             <tr tabindex="-1" id="att-rows">
                 <th><code>rows</code></th>
                 <td class="elements"><a href="https://www.w3.org/TR/html/sec-forms.html#element-attrdef-textarea-rows"><code>textarea</code></a></td>
-                <td class="aria">?</td>
+                <td class="aria">Not mapped</td>
                 <td class="ia2"><div class="general">Not mapped</div></td>
                 <td class="uia"><div class="general">Not mapped</div></td>
                 <td class="atk"><div class="general">Not mapped</div></td>
@@ -4797,7 +4809,11 @@
             <tr tabindex="-1" id="att-scope">
                 <th><code>scope</code></th>
                 <td class="elements"><a href="https://www.w3.org/TR/html/tabular-data.html#element-attrdef-th-scope"><code>th</code></a></td>
-                <td class="aria">?</td>
+                <td class="aria">
+                  <a class="core-mapping" href="#columnHeader"><code>role="columnheader"</code></a>
+                  or
+                  <a class="core-mapping" href="#rowHeader"><code>role="rowheader"</code></a>
+                </td>
                 <td class="ia2">
                   <div class="general">
                     Defines whether the element is a row or column header (refer to <a href="#el-th"><code>th</code></a> element)
